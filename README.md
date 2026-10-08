@@ -228,15 +228,14 @@ python -m app.seed
 
 ## Demo Accounts
 
-Use these accounts to explore the full platform:
+Use these verified accounts to explore the full platform:
 
 | Role | Email | Password |
 |---|---|---|
-| **Brand / Recruiter** | `brand@maccall.demo` | `demo1234` |
-| **Creator (Aarav Studio)** | `creator@maccall.demo` | `demo1234` |
-| **Admin** | `admin@maccall.demo` | `demo1234` |
+| **Demo Recruiter** | `recruiter@codexero.com` | `Demo@123` |
+| **Demo Content Creator** | `creator@codexero.com` | `Demo@123` |
 
-> To test the **complete hiring flow**: log in as Recruiter → Discover → Hire Creator → switch to Creator account → accept proposal → verify workspace appears for both.
+> To test the **complete hiring flow**: log in as Demo Recruiter (`recruiter@codexero.com` / `Demo@123`) → Discover → Hire Creator (`creator@codexero.com`) → switch to Demo Content Creator account (`creator@codexero.com` / `Demo@123`) → accept proposal → verify workspace appears for both accounts.
 
 ---
 
@@ -295,7 +294,12 @@ Both     → Navigate to Workspaces → Private collaboration space
 
 ```bash
 cd backend
-venv\Scripts\activate  # Windows
+
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+
 pytest tests/ -v
 ```
 
